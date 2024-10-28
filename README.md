@@ -57,7 +57,7 @@ A blag.
 	- Realize this version of Ruby is very old when you get a lot of warnings about incompatibilities while running `gem update`
 	- `git clone https://github.com/rbenv/ruby-build.git /home/<username>/.rbenv/plugins/ruby-build`
 	- `rbenv install 3.2.2`
-	- Add the line `rbenv init -` to the end of your `.bashrc` and `source` it
+	- Add the line `eval "$(rbenv init -)"` to your `~/.profile` ([*not* `~/.bashrc`!](https://askubuntu.com/questions/320444/setting-up-rbenv-properly)) and `source` it
 	- `rbenv global 3.2.2`
 	- Find the location of your OpenSSL installation: `which openssl`. Mine is /usr/bin/openssl. Use your path in the next command.
 	- `gem update --with-openssl-dir=/usr/bin/openssl` (or other path to OpenSSL)
