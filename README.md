@@ -57,7 +57,7 @@ A blag.
 	- Realize this version of Ruby is very old when you get a lot of warnings about incompatibilities while running `gem update`
 	- `git clone https://github.com/rbenv/ruby-build.git /home/<username>/.rbenv/plugins/ruby-build`
 	- `rbenv install 3.2.2`
-	- Add the line `eval "$(rbenv init -)"` to your `~/.profile` ([*not* `~/.bashrc`!](https://askubuntu.com/questions/320444/setting-up-rbenv-properly)) and `source` it
+	- Add the line `eval "$(rbenv init -)"` to your `~/.profile` ([*not* `~/.bashrc`!](https://askubuntu.com/questions/320444/setting-up-rbenv-properly)) and `source` it -- **THIS STILL DOES NOT WORK FOR ME.** I need to manually `source` the `.profile` each time I log in. Putting it in `.bashrc` didn't work either. Without doing this, when I try to preview locally using `bundle exec jekyll serve`, I get a list of packages that are required but "not" installed. They are installed, just in that specific Ruby environment that isn't automatically initialized.
 	- `rbenv global 3.2.2`
 	- Find the location of your OpenSSL installation: `which openssl`. Mine is /usr/bin/openssl. Use your path in the next command.
 	- `gem update --with-openssl-dir=/usr/bin/openssl` (or other path to OpenSSL)
