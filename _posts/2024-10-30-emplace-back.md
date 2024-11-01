@@ -3,7 +3,7 @@ layout: post
 title:  emplace_back() and other implicit constructors
 date:   2024-10-30 19:56:00 -0600
 tags:
-- c++
+- C++
 - constructors
 ---
 

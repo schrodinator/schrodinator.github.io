@@ -3,7 +3,7 @@ layout: post
 title:  Why blag?
 date:   2024-10-27 19:55:50 -0600
 tags:
-- c++
+- C++
 - qotd
 ---
 
