@@ -19,11 +19,14 @@ For whatever reason, I've found it difficult to locate this information with Goo
 > The compiler toolset offers many options that help you when you’re testing your code. Most of these switches aren’t intended to be shipped with your final, retail builds of your program. They’re turned on for debug builds—either by default or opt-in—so that you can find more bugs during your testing.
 
 > CRT Debug Heap
+
 > The CRT Debug Heap is enabled when you compile your program in debug (non-release) mode. It finds common heap memory errors, including buffer overruns and leaks. The CRT Debug Heap will assert when it encounters any heap memory errors as you test your code. [Various debug routines](https://docs.microsoft.com/en-us/cpp/c-runtime-library/debug-routines) are enabled when you define the `_DEBUG` flag.
 
 > Runtime Checks
+
 > The CRT provides [Runtime Checks](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks) enabled through use of the /RTC switch. These checks find real logic errors in your program such as data loss, initialization issues, and stack frame checking. Runtime Checks are only intended for when you are active testing your debug builds and are incompatible with optimizations. Because of these limitations they are off by default.
 
 > Checked Iterators
+
 > Checked iterators help ensure that your code doesn’t accidentally overwrite the bounds of iterable containers in your code. They can be used both in [debug code](https://docs.microsoft.com/en-us/cpp/standard-library/debug-iterator-support) (as debug iterators) and in [release code](https://docs.microsoft.com/en-us/cpp/standard-library/checked-iterators) (as checked iterators.)
 
