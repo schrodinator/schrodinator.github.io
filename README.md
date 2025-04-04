@@ -31,7 +31,7 @@ A blag.
 
 ## Update and install dependencies
 
-- Update the package manager: `sudo apt update -y && apt upgrade -y`
+- Update the package manager: `sudo apt update -y && sudo apt upgrade -y`
 - Is `ssh` working?
 	- `sudo apt install ssh`
 	- `sudo service ssh restart`
