@@ -54,6 +54,7 @@ A blag.
 
 - Install Ruby
 	- `sudo apt install ruby-full`
+   	- `sudo apt install libffi-dev`
 	- Realize this version of Ruby is very old when you get a lot of warnings about incompatibilities while running `gem update`
 	- `git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build`
 	- `rbenv install 3.2.2`
